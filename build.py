@@ -90,7 +90,8 @@ def header(p):
         nav_items.append(f'<a href="{href}"{current}>{label}</a>')
     links = "".join(nav_items)
     return (f'<a class="skip" href="#main">Skip to content</a><header class="site-header"><div class="wrap">'
-            f'<a class="brand" href="/">{C.SITE_NAME}</a><nav class="nav" aria-label="Main">{links}'
+            f'<a class="brand" href="/" aria-label="{C.SITE_NAME} home"><img src="/static/stepfast-logo.png" width="40" height="40" alt="" decoding="async">'
+            f'<span>{C.SITE_NAME}</span></a><nav class="nav" aria-label="Main">{links}'
             f'<a href="{C.app_link("nav")}" rel="noopener">App Store</a></nav></div></header>')
 
 
@@ -130,8 +131,10 @@ def render(p):
 <meta property="og:description" content="{esc(p["description"])}">
 <meta property="og:url" content="{canonical}">
 <meta name="theme-color" content="#f9d84b">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='15' fill='%23f9d84b'/%3E%3Cpath d='M9 20l4-8 4 6 3-5 3 7' fill='none' stroke='%2314110a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" type="image/png" sizes="256x256" href="/static/stepfast-logo.png">
 <link rel="stylesheet" href="/static/style.css">
+<script async src="https://www.googletagmanager.com/gtag/js?id={C.GA_MEASUREMENT_ID}"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){{dataLayer.push(arguments);}}gtag('js',new Date());gtag('config','{C.GA_MEASUREMENT_ID}');</script>
 {structured_data(p)}
 </head>
 <body>

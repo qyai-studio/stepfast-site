@@ -6,6 +6,7 @@ SITE_NAME = "StepFast"
 PUBLISHER = "QYAI Tech Limited"
 APP_ID = "6818072132"
 APP_STORE_URL = f"https://apps.apple.com/us/app/stepfast-walk-fasting-timer/id{APP_ID}"
+GA_MEASUREMENT_ID = "G-LWVPFNRKPV"            # StepFast.app GA4 web stream
 PROVIDER_TOKEN = ""                         # optional: App Store Connect provider token (pt=) for campaign analytics
 LEGAL_PRIVACY = "https://legal.qyaitech.com/privacy/"
 LEGAL_TERMS = "https://legal.qyaitech.com/terms/"

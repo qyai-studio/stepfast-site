@@ -43,7 +43,8 @@ img { max-width: 100%; height: auto; }
 /* header */
 .site-header { border-bottom: 1px solid var(--line); }
 .site-header .wrap { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; padding-top: 14px; padding-bottom: 14px; }
-.brand { font: 700 22px var(--serif); color: var(--ink); text-decoration: none; margin-right: auto; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font: 700 22px var(--serif); color: var(--ink); text-decoration: none; margin-right: auto; }
+.brand img { display: block; width: 40px; height: 40px; border-radius: 10px; object-fit: cover; }
 .nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
 .nav a { color: var(--ink); text-decoration: none; font-size: 15px; padding: 4px 0; border-bottom: 2px solid transparent; }
 .nav a:hover, .nav a[aria-current="page"] { border-bottom-color: var(--accent); }
