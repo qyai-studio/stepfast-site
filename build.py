@@ -63,7 +63,8 @@ def structured_data(p):
         if p["kind"] == "article":
             out.append({"@context": "https://schema.org", "@type": "Article", "headline": p["h1"],
                         "description": p["description"], "mainEntityOfPage": url_for(p["slug"]),
-                        "dateModified": C.UPDATED, "datePublished": C.UPDATED,
+                        "dateModified": p.get("modified", C.UPDATED),
+                        "datePublished": p.get("published", C.PUBLISHED),
                         "author": {"@type": "Organization", "name": f"{C.SITE_NAME} team"},
                         "publisher": {"@type": "Organization", "name": C.PUBLISHER}})
     return jsonld(out)
@@ -99,7 +100,10 @@ def footer():
     contact = f' · <a href="mailto:{esc(C.CONTACT_EMAIL)}">{esc(C.CONTACT_EMAIL)}</a>' if C.CONTACT_EMAIL else ""
     return (f'<footer class="site-footer"><div class="wrap"><nav aria-label="Footer">'
             f'<a href="/how-it-works/">How it works</a><a href="/intermittent-fasting/">Intermittent fasting</a>'
+            f'<a href="/weight-tracking/">Weight tracking</a>'
             f'<a href="/walking-for-weight-loss/">Walking</a><a href="/tools/step-goal/">Step goal planner</a>'
+            f'<a href="/walking-10000-steps-weight-loss/">10,000 steps and weight loss</a>'
+            f'<a href="/how-long-to-walk-for-weight-loss/">How long to walk</a>'
             f'<a href="/safety/">Safety</a><a href="{C.LEGAL_PRIVACY}">Privacy</a><a href="{C.LEGAL_TERMS}">Terms</a></nav>'
             f'<p>StepFast is published by {C.PUBLISHER}{contact}. For adults {C.MIN_AGE} and older. '
             f'StepFast is a wellness app, not a medical device. It does not give medical advice, diagnose or treat any condition. '
@@ -159,7 +163,7 @@ def main():
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(render(p), encoding="utf-8")
     urls = "".join(
-        f"<url><loc>{url_for(p['slug'])}</loc><lastmod>{C.UPDATED}</lastmod></url>" for p in PAGES
+        f"<url><loc>{url_for(p['slug'])}</loc><lastmod>{p.get('modified', C.UPDATED)}</lastmod></url>" for p in PAGES
     )
     (DIST / "sitemap.xml").write_text(
         f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>\n',

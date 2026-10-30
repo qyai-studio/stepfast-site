@@ -68,7 +68,7 @@ the zones look like this:</p>
 <h2>Track your weight over time</h2>
 <p>Log your weight and watch the trend, not the single number. Day-to-day weight moves around, so a trend over
 weeks tells you more than one morning's reading. StepFast also shows your steps and weight together so you can see how
-your walking habit and the scale line up for you.</p>
+your walking habit and the scale line up for you. <a href="/weight-tracking/">Learn how to track weight and read the trend.</a></p>
 
 <h2>Fasting is optional</h2>
 <p>Walking and weight tracking work without it. If you choose to use fasting, StepFast runs a safety check first and
@@ -126,9 +126,59 @@ turned off for you. If you've told it about eating struggles, it doesn't push fa
 
 <h2>5. Check in on trends</h2>
 <p>The app has four tabs: Today, Calculator, Fast and Trends. Today shows your steps and plan, Fast is the optional timer,
-and Trends shows your weight and steps over time.</p>
+and Trends shows your weight and steps over time. Read our <a href="/weight-tracking/">weight tracking guide</a> for tips on weigh-in routines and daily fluctuations.</p>
 {SAFETY_NOTE}
 {cta_band('how-it-works')}
+"""
+
+
+def weight_tracking_body():
+    return f"""
+<p class="answer"><strong>How should you track your weight?</strong> Use a routine you can follow without judging yourself by one reading. Daily and weekly weigh-ins are both used; consistency and how the process affects you matter. A weight trend is more useful than treating each number as a verdict.</p>
+
+<h2>How often should I weigh myself?</h2>
+<p>There is no single schedule that suits everyone. NIDDK lists weekly weight monitoring as one part of a structured, safe weight-management program. Cleveland Clinic notes that some people prefer a daily routine and others a weekly one. Choose a cadence that feels manageable. If weighing causes anxiety or pushes you toward restrictive behavior, scale back or pause and talk with a health professional.</p>
+
+<h2>Make weigh-ins easier to compare</h2>
+<ol>
+  <li>Use the same scale on a firm, level surface.</li>
+  <li>Weigh at a similar time and in similar clothing, if you choose to weigh regularly.</li>
+  <li>Record the date with the measurement so you can compare readings across weeks.</li>
+</ol>
+<p>Consistency reduces avoidable differences between readings. Cleveland Clinic suggests weighing in the morning after using the restroom and before eating or drinking, but the most useful routine is one you can keep without distress.</p>
+
+<h2>Why can weight change from one day to the next?</h2>
+<p>The scale measures total body weight, which can shift for reasons besides a change in body fat. Water retention, food and digestion, physical activity, hormonal changes, stress and some medications can affect short-term readings. If your weight changes suddenly by a large amount without an obvious reason, ask a healthcare professional.</p>
+
+<h2>Read the pattern, not one number</h2>
+<p>If you weigh more often, look at the overall direction across several weeks rather than reacting to the highest or lowest day. If you weigh weekly, compare readings taken on similar days and conditions. A graph or trend line can make the pattern easier to see, but it cannot explain the cause of a change or predict a health outcome.</p>
+<p>Progress also includes habits you can sustain. StepFast puts weight and step history together so you can review both. Its trend features are part of an optional paid tier; the App Store purchase screen shows current plan details.</p>
+
+<h2>What StepFast tracks</h2>
+<ul>
+  <li>Weight and step information together, with optional read-only Apple Health access.</li>
+  <li>Your plan and entries stored on your iPhone; no StepFast account is required.</li>
+  <li>Step tracking and weight tracking without a food or calorie log. StepFast is a wellness app, not medical advice.</li>
+</ul>
+<p>See <a href="/how-it-works/">how StepFast works</a> or read the <a href="{C.LEGAL_PRIVACY}">privacy policy</a> for details about data handling.</p>
+
+<h2>Common questions</h2>
+{faq([
+    ("Should I weigh myself daily or weekly?", "Either can work for different people. NIDDK describes weekly weight monitoring as a component of structured weight-management programs. Pick a consistent schedule that does not cause distress."),
+    ("Why did my weight go up overnight?", "Short-term changes can reflect water retention, food and digestion, activity, hormones, stress or medication effects. A single reading cannot identify the cause."),
+    ("Is daily weighing better for tracking progress?", "Daily readings give more points for a trend, but they are not right for everyone. If the scale affects your mood or behavior, use a less frequent schedule or pause tracking and seek support."),
+    ("Can StepFast read weight from Apple Health?", "Yes. Apple Health access is optional and read-only. StepFast does not require an account, and your plan and entries are stored on your iPhone."),
+    ("Does StepFast track calories or food?", "No. StepFast tracks steps and weight, with intermittent fasting as an optional feature. It is not a food or calorie log."),
+])}
+
+<h2>Sources</h2>
+<ul class="sources">
+  <li><a href="https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment">NIDDK: Treatment for Overweight &amp; Obesity</a></li>
+  <li><a href="https://health.clevelandclinic.org/when-is-the-best-time-to-weigh-yourself">Cleveland Clinic: The Best Time to Weigh Yourself</a></li>
+  <li><a href="https://health.clevelandclinic.org/weight-fluctuations">Cleveland Clinic: Why Weight Fluctuates</a></li>
+</ul>
+<p class="meta">This page is general wellness information, not a personal weight-management plan or medical advice.</p>
+{cta_band('weight-tracking')}
 """
 
 
@@ -374,9 +424,100 @@ Use the <a href="/tools/step-goal/">step goal planner</a> to pace it.</p>
 <h2>How StepFast helps</h2>
 <p>StepFast shows today's steps against your goal in four zones, lets you log your weight, and shows trends over time. It
 suggests a walk when you're short on steps. <a href="/how-it-works/">See how it works</a>.</p>
+<h2>More walking questions</h2>
+<ul>
+  <li><a href="/walking-10000-steps-weight-loss/">Will 10,000 steps a day help you lose weight?</a></li>
+  <li><a href="/how-long-to-walk-for-weight-loss/">How long should you walk for weight loss?</a></li>
+  <li><a href="/tools/step-goal/">Build a gradual step goal from your current average</a>.</li>
+</ul>
 <h2>Sources</h2>
 <ul class="sources"><li><a href="{SRC_CDC_ADULT[1]}">{SRC_CDC_ADULT[0]}</a></li><li><a href="{SRC_CDC_COUNTS[1]}">{SRC_CDC_COUNTS[0]}</a></li><li><a href="{SRC_MAYO[1]}">{SRC_MAYO[0]}</a></li></ul>
 {cta_band('walking-for-weight-loss')}
+"""
+
+
+def ten_thousand_steps_body():
+    return f"""
+<p class="answer"><strong>Will 10,000 steps a day help you lose weight?</strong> It can be one way to add movement, but 10,000 steps is not a required target and cannot predict how much weight one person will lose. A useful goal depends on your starting point, health and routine.</p>
+
+<h2>Is 10,000 steps a day necessary?</h2>
+<p>No. The CDC's adult activity guidance is based on minutes of activity, including at least 150 minutes of moderate-intensity activity each week for substantial health benefits. It does not set 10,000 steps as a universal weight-loss prescription. Some activity is better than none, and the guidance can be spread across the week.</p>
+
+<h2>What if you are walking 10,000 steps but the scale is not changing?</h2>
+<p>Steps alone cannot explain a change in body weight. Weight management can involve both physical activity and eating patterns, and a step total does not show what any one person's weight should do or when it should change. A single weigh-in also cannot show a longer-term trend. If you are concerned about your weight trend or have a health condition, ask a health professional for advice that fits your situation.</p>
+
+<h2>Choose a goal from your own baseline</h2>
+<ol>
+  <li>Look at a normal week of steps, if you have a step history.</li>
+  <li>Choose an increase that feels manageable and repeat it before raising the target again.</li>
+  <li>Pay attention to comfort and consistency. Reduce the goal if it causes pain or does not fit your routine.</li>
+</ol>
+<p>If you want help pacing a step increase, use the <a href="/tools/step-goal/">Step goal planner</a>. It creates a gradual step schedule; it does not estimate pounds lost. Read the broader <a href="/walking-for-weight-loss/">walking and weight guide</a> for step-count context.</p>
+
+<h2>What 10,000 steps can tell you</h2>
+<p>A step total can help you notice how much you moved that day. It cannot tell you whether you reached a personal weight goal. StepFast tracks steps and weight trends, but it does not turn a step count into a promised weight change.</p>
+
+<h2>Common questions</h2>
+{faq([
+    ("Do I need 10,000 steps to lose weight?", "No. It is not a required number for everyone. Choose activity that fits your starting point and health."),
+    ("How much weight will I lose by walking 10,000 steps a day?", "There is no reliable amount that can be calculated from steps alone. Your weight response depends on more than a step count."),
+    ("Should I go from 4,000 steps straight to 10,000?", "You do not have to make that jump. Start from your usual activity and build at a pace you can maintain."),
+    ("What if I walk 10,000 steps and my weight stays the same?", "Look at the longer-term pattern and consider other factors that affect weight. A clinician can help if you have concerns."),
+])}
+
+<h2>Sources</h2>
+<ul class="sources">
+  <li><a href="{SRC_CDC_ADULT[1]}">{SRC_CDC_ADULT[0]}</a></li>
+  <li><a href="https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment">NIDDK: Treatment for Overweight &amp; Obesity</a></li>
+</ul>
+<p class="meta">This page is general wellness information, not a personal weight-loss plan or medical advice.</p>
+{cta_band('walking-10000-steps-weight-loss')}
+"""
+
+
+def walking_duration_body():
+    return f"""
+<p class="answer"><strong>How long should you walk each day for weight loss?</strong> There is no fixed number of minutes that guarantees weight loss. For general health, CDC guidance for adults is at least 150 minutes of moderate-intensity activity each week; brisk walking counts. That could be 30 minutes on five days, or shorter sessions spread across the week.</p>
+
+<h2>Use the weekly guideline as a reference, not a promise</h2>
+<p>The 150-minute recommendation is a general physical-activity guideline, not a weight-loss dose. The CDC says adults can spread activity through the week and break it into smaller chunks. Some activity is better than none. If you are inactive, start with an amount that feels manageable and build gradually.</p>
+
+<div class="card">
+  <h3>One way to organize 150 minutes</h3>
+  <p>Walk briskly for about 30 minutes on five days of the week. If a longer walk does not fit, split the time into shorter walks. A moderate pace is one where you can talk but not sing.</p>
+  <p class="meta">This is an example based on CDC general guidance, not a personalized prescription.</p>
+</div>
+
+<h2>What counts as a brisk, moderate walk?</h2>
+<p>Use the talk test: at a moderate pace, you can talk but not sing. Pace and ability vary. You can begin more gently, take breaks, and increase duration as your body and schedule allow. Stop and seek medical advice if activity causes concerning symptoms.</p>
+
+<h2>Why walking time cannot predict weight loss</h2>
+<p>Minutes walked do not translate into a guaranteed amount of weight change. NIDDK describes weight management as involving both eating patterns and physical activity. A walking routine can support activity goals, but a particular number of minutes cannot say how much weight you will lose or how quickly.</p>
+
+<h2>Make a routine you can repeat</h2>
+<ul>
+  <li>Pick days and times that fit a normal week.</li>
+  <li>Start with shorter walks if that is what you can do consistently.</li>
+  <li>Track your steps and weight over time rather than judging the plan from one day.</li>
+</ul>
+<p>For step-based pacing, try the <a href="/tools/step-goal/">Step goal planner</a>. For a step-count answer, see <a href="/walking-10000-steps-weight-loss/">what 10,000 steps can and cannot tell you</a>.</p>
+
+<h2>Common questions</h2>
+{faq([
+    ("Is 30 minutes of walking a day enough?", "Thirty minutes on five days is one way to reach the CDC's 150-minute weekly activity recommendation for adults. It is a general health guideline and does not guarantee weight loss."),
+    ("Can I split my walk into shorter sessions?", "Yes. CDC guidance says activity can be spread through the week and broken into smaller chunks."),
+    ("Do I need to walk every day?", "No. The weekly guideline can be spread across different days. Choose a schedule that works for you."),
+    ("How fast should I walk?", "A moderate pace is one where you can talk but not sing. Adjust the pace to your ability."),
+])}
+
+<h2>Sources</h2>
+<ul class="sources">
+  <li><a href="{SRC_CDC_ADULT[1]}">{SRC_CDC_ADULT[0]}</a></li>
+  <li><a href="{SRC_CDC_COUNTS[1]}">{SRC_CDC_COUNTS[0]}</a></li>
+  <li><a href="https://www.niddk.nih.gov/health-information/weight-management/adult-overweight-obesity/treatment">NIDDK: Treatment for Overweight &amp; Obesity</a></li>
+</ul>
+<p class="meta">This page is general wellness information, not a personal exercise or weight-loss prescription.</p>
+{cta_band('how-long-to-walk-for-weight-loss')}
 """
 
 
@@ -418,6 +559,10 @@ PAGES = [
     dict(slug="how-it-works", title="How StepFast Works: Steps, Weight and Optional Fasting",
          description="See how StepFast turns your daily steps into a simple plan: goal zones, a step-gap calculator, an optional fasting timer and safety checks.",
          h1="How StepFast works", kind="page", body=how_body, nav="how-it-works"),
+    dict(slug="weight-tracking", title="Weight Tracker App for iPhone: See Weight Trends | StepFast",
+         description="Track weight over time with StepFast. Learn how to choose a weigh-in routine, understand daily changes, and use a trend without chasing one number.",
+         h1="Track your weight over time, not one weigh-in at a time", kind="article", body=weight_tracking_body,
+         nav=None, published="2026-10-30", modified="2026-10-30"),
     dict(slug="safety", title="Safety and Who Shouldn't Fast | StepFast",
          description="Who should not fast, what StepFast's safety check does, and when to stop and get help. StepFast is a wellness app, not medical advice.",
          h1="Safety and who shouldn't fast", kind="article", body=safety_body, nav="safety"),
@@ -439,6 +584,14 @@ PAGES = [
     dict(slug="walking-for-weight-loss", title="Walking for Weight Loss: How Many Steps a Day? | StepFast",
          description="How many steps a day to lose weight? There is no one number. How to ramp up gradually, what the CDC recommends, and what to do when the scale is stuck.",
          h1="Walking for weight loss: how many steps a day?", kind="article", body=walking_body, nav="walking-for-weight-loss"),
+    dict(slug="walking-10000-steps-weight-loss", title="10,000 Steps a Day for Weight Loss: What to Expect | StepFast",
+         description="Can 10,000 steps a day help with weight loss? Learn what the number can and can't tell you, how to build from your baseline, and why it cannot predict a result.",
+         h1="Will 10,000 steps a day help you lose weight?", kind="article", body=ten_thousand_steps_body,
+         nav="walking-for-weight-loss", published="2026-10-30", modified="2026-10-30"),
+    dict(slug="how-long-to-walk-for-weight-loss", title="How Long Should You Walk for Weight Loss? | StepFast",
+         description="How long should you walk each day? See the CDC's general weekly activity guidance, ways to split up walks, and why minutes cannot promise weight loss.",
+         h1="How long should you walk each day for weight loss?", kind="article", body=walking_duration_body,
+         nav="walking-for-weight-loss", published="2026-10-30", modified="2026-10-30"),
     dict(slug="tools/step-goal", title="Step Goal Planner: Build a Weekly Walking Ramp | StepFast",
          description="Free step goal planner. Enter your current steps and a target, and get a week-by-week plan that adds a little at a time.",
          h1="Step goal planner", kind="article", body=step_goal_body, nav="walking-for-weight-loss"),
