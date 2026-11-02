@@ -251,6 +251,8 @@ for you, it can suggest a later first meal. A safety check comes first, and tota
   <li><a href="/intermittent-fasting/weight-loss/">Intermittent fasting for weight loss</a></li>
   <li><a href="/intermittent-fasting/walking-while-fasting/">Walking while fasting</a></li>
   <li><a href="/intermittent-fasting/apps/">How to choose a fasting app</a></li>
+  <li><a href="/intermittent-fasting/eating-window/">Eating window guide</a></li>
+  <li><a href="/glossary/">Fasting and walking glossary</a></li>
 </ul>
 <h2>Sources</h2>
 <ul class="sources"><li><a href="{SRC_HOPKINS[1]}">{SRC_HOPKINS[0]}</a></li><li><a href="{SRC_MAYO[1]}">{SRC_MAYO[0]}</a></li></ul>
@@ -391,6 +393,68 @@ optional paid tier.</p>
 so compare each one's current App Store page using the checklist above.</p>
 {SAFETY_NOTE}
 {cta_band('intermittent-fasting-apps')}
+"""
+
+
+def glossary_body():
+    return f"""
+<p class="answer">Plain-language guides to walking, weight tracking, and optional intermittent fasting in StepFast.</p>
+{SAFETY_NOTE}
+<h2>Intermittent fasting</h2><ul>
+<li><a href="/intermittent-fasting/">Intermittent fasting</a> — eating and not eating on a schedule.</li>
+<li><a href="/intermittent-fasting/eating-window/">Eating window</a> — the daily hours when a person eats.</li>
+<li><a href="/intermittent-fasting/schedule/">16/8 schedule</a> — a common daily pattern with an eight-hour eating window.</li>
+<li><a href="/intermittent-fasting/weight-loss/">Fasting and weight</a> — what evidence does and does not show.</li>
+<li><a href="/intermittent-fasting/walking-while-fasting/">Walking while fasting</a></li>
+<li><a href="/intermittent-fasting/apps/">Choosing an intermittent fasting app</a></li>
+<li><a href="/glossary/fasting-timer/">Fasting timer</a> — a clock for a fasting period or eating window.</li></ul>
+<h2>Walking and steps</h2><ul><li><a href="/walking-for-weight-loss/">Walking for weight loss</a></li><li><a href="/walking-10000-steps-weight-loss/">10,000 steps</a></li><li><a href="/how-long-to-walk-for-weight-loss/">How long to walk</a></li><li><a href="/tools/step-goal/">Step goal planner</a></li></ul>
+<h2>Product and safety</h2><ul><li><a href="/how-it-works/">How StepFast works</a></li><li><a href="/weight-tracking/">Weight tracking</a></li><li><a href="/safety/">Safety</a></li></ul>
+<h2>Other fasting terms</h2><ul><li><a href="/glossary/omad/">OMAD</a></li><li><a href="/glossary/water-fasting-vs-intermittent-fasting/">Water fasting vs intermittent fasting</a></li></ul>
+<p>StepFast leads with walking. Fasting is optional, starts after a safety check, and is capped at {C.FAST_CAP_HOURS} hours per day.</p>
+{cta_band('glossary')}
+"""
+
+
+def eating_window_body():
+    return f"""
+<p class="answer">An eating window is the part of a daily time-restricted eating schedule when a person eats. It is one approach to intermittent fasting, not a required StepFast feature.</p>
+{SAFETY_NOTE}
+<h2>How it fits intermittent fasting</h2><p>A common example is 16/8: about 16 hours fasting and an eight-hour eating window. See <a href="/intermittent-fasting/">the broader guide</a> or use the <a href="/intermittent-fasting/schedule/">schedule planner</a>.</p>
+<h2>Example windows</h2><div class="tablewrap"><table><thead><tr><th>First meal</th><th>Last meal</th><th>Approx. fasting span</th></tr></thead><tbody><tr><td>10 a.m.</td><td>6 p.m.</td><td>6 p.m.–10 a.m.</td></tr><tr><td>Noon</td><td>8 p.m.</td><td>8 p.m.–noon</td></tr><tr><td>1 p.m.</td><td>9 p.m.</td><td>9 p.m.–1 p.m.</td></tr></tbody></table></div><p>Examples are not prescriptions. A shorter window is not automatically better. Johns Hopkins Medicine notes that fasts of 24 hours or longer may be dangerous.</p>
+<h2>How StepFast handles windows</h2><p>Fasting stays off unless you choose it. A safety check comes first, and StepFast never plans more than {C.FAST_CAP_HOURS} fasting hours a day. The app prioritizes walking; weight and step tracking work with fasting off.</p>
+<h2>Common questions</h2>{faq([("Is an eating window the same as intermittent fasting?", "It is one form of time-restricted eating within the broader category of intermittent fasting."),("Do I need one to use StepFast?", "No. Walking and weight tracking work with fasting off."),("Can I walk during a fasting period?", "Yes, many people walk during the day; review the walking-while-fasting guide and follow clinician advice relevant to you.")])}
+<h2>Related reading</h2><ul><li><a href="/glossary/">Glossary</a></li><li><a href="/glossary/fasting-timer/">Fasting timer</a></li><li><a href="/safety/">Safety</a></li></ul>
+<h2>Source</h2><ul class="sources"><li><a href="{SRC_HOPKINS[1]}">{SRC_HOPKINS[0]}</a></li></ul>{cta_band('intermittent-fasting-eating-window')}
+"""
+
+
+def fasting_timer_body():
+    return f"""
+<p class="answer">A fasting timer tracks elapsed time in a fasting period or time remaining until an eating window. It records time; it cannot guarantee a health or weight outcome.</p>
+{SAFETY_NOTE}
+<h2>What a timer can and cannot do</h2><p>It can help show time in a chosen schedule. It cannot decide whether fasting is safe for you. StepFast's Fast tab is optional, follows a safety check, and is capped at {C.FAST_CAP_HOURS} hours per day.</p>
+<h2>StepFast's optional timer</h2><p>StepFast is walking-first. Today and Trends support steps and weight without fasting. When you fall short on steps, it prioritizes walking. Learn <a href="/how-it-works/">how the product works</a> or <a href="/intermittent-fasting/apps/">how to choose an app</a>.</p>
+<h2>Related reading</h2><ul><li><a href="/glossary/">Glossary</a></li><li><a href="/intermittent-fasting/eating-window/">Eating windows</a></li><li><a href="/intermittent-fasting/schedule/">16/8 planner</a></li><li><a href="/safety/">Safety</a></li></ul>
+<h2>Source</h2><ul class="sources"><li><a href="{SRC_HOPKINS[1]}">{SRC_HOPKINS[0]}</a></li></ul>{cta_band('glossary-fasting-timer')}
+"""
+
+
+def omad_body():
+    return f"""
+<p class="answer">OMAD means “one meal a day,” a restrictive eating pattern. StepFast does not recommend or plan OMAD.</p>{SAFETY_NOTE}
+<h2>How it differs from 16/8</h2><p>16/8 describes a 16-hour fast and an eight-hour eating window; OMAD centers eating around one meal. See the <a href="/intermittent-fasting/schedule/">16/8 planner</a>.</p>
+<h2>Safety and StepFast</h2><p>Restrictive eating is not appropriate for everyone. Seek clinician guidance before changing your eating pattern. StepFast leads with walking and caps optional fasting at {C.FAST_CAP_HOURS} hours per day; you can use it with fasting off. See <a href="/safety/">safety</a>.</p>
+<h2>Related reading</h2><ul><li><a href="/glossary/">Glossary</a></li><li><a href="/intermittent-fasting/">Intermittent fasting</a></li><li><a href="/intermittent-fasting/schedule/">16/8 planner</a></li></ul>{cta_band('glossary-omad')}
+"""
+
+
+def water_fasting_body():
+    return f"""
+<p class="answer">Water fasting generally means abstaining from food while consuming water. Intermittent fasting refers to scheduled periods of eating and not eating; the terms are not interchangeable.</p>{SAFETY_NOTE}
+<h2>Safety first</h2><p>Longer fasts can carry risks and are not necessarily better. Do not restrict water or attempt a prolonged fast based on online instructions; seek medical guidance. Review <a href="/safety/">who should avoid fasting</a>.</p>
+<h2>What StepFast supports</h2><p>StepFast does not support multi-day or water-only fasting. Its optional daily fasting feature has a {C.FAST_CAP_HOURS}-hour cap and can remain off. The app prioritizes walking and weight tracking.</p>
+<h2>Related reading</h2><ul><li><a href="/glossary/">Glossary</a></li><li><a href="/intermittent-fasting/">Intermittent fasting</a></li><li><a href="/glossary/omad/">OMAD</a></li><li><a href="/safety/">Safety</a></li></ul>{cta_band('glossary-water-vs-if')}
 """
 
 
@@ -563,15 +627,30 @@ PAGES = [
          description="Track weight over time with StepFast. Learn how to choose a weigh-in routine, understand daily changes, and use a trend without chasing one number.",
          h1="Track your weight over time, not one weigh-in at a time", kind="article", body=weight_tracking_body,
          nav=None, published="2026-10-30", modified="2026-10-30"),
+    dict(slug="glossary", title="StepFast Glossary: Walking, Weight Tracking & Fasting Terms",
+         description="Plain-language definitions for walking, weight tracking, intermittent fasting, eating windows, and StepFast tools.",
+         h1="StepFast glossary", kind="article", body=glossary_body, nav="glossary"),
+    dict(slug="intermittent-fasting/eating-window", title="What Is an Eating Window? Examples & Safety | StepFast",
+         description="Learn what an eating window means, see 16/8 examples, and how StepFast keeps fasting optional.",
+         h1="What is an eating window?", kind="article", body=eating_window_body, nav="intermittent-fasting"),
+    dict(slug="glossary/fasting-timer", title="What Is a Fasting Timer? How It Works | StepFast",
+         description="Learn what a fasting timer tracks, its limits, and how StepFast's optional Fast tab works.",
+         h1="What is a fasting timer?", kind="article", body=fasting_timer_body, nav="glossary"),
+    dict(slug="glossary/omad", title="What Is OMAD? One Meal a Day Explained | StepFast",
+         description="Understand what OMAD means, how it differs from 16/8, and why StepFast does not promote restrictive fasting.",
+         h1="What is OMAD (one meal a day)?", kind="article", body=omad_body, nav="glossary"),
+    dict(slug="glossary/water-fasting-vs-intermittent-fasting", title="Water Fasting vs Intermittent Fasting: Differences & Safety | StepFast",
+         description="Understand the difference between water fasting and intermittent fasting, with clear safety information and StepFast's limits.",
+         h1="Water fasting vs intermittent fasting", kind="article", body=water_fasting_body, nav="glossary"),
     dict(slug="safety", title="Safety and Who Shouldn't Fast | StepFast",
          description="Who should not fast, what StepFast's safety check does, and when to stop and get help. StepFast is a wellness app, not medical advice.",
          h1="Safety and who shouldn't fast", kind="article", body=safety_body, nav="safety"),
     dict(slug="intermittent-fasting", title="What Is Intermittent Fasting? Who Should Skip It | StepFast",
-         description="A plain-language guide to intermittent fasting: common patterns, what research suggests, side effects, who should skip it, and how StepFast keeps it optional.",
-         h1="Intermittent fasting: what it is and who it's not for", kind="article", body=fasting_pillar_body, nav="intermittent-fasting"),
+         description="What intermittent fasting means, common schedules, limits, safety, and how StepFast keeps it optional with walking first.",
+         h1="What is intermittent fasting?", kind="article", body=fasting_pillar_body, nav="intermittent-fasting"),
     dict(slug="intermittent-fasting/schedule", title="Intermittent Fasting Schedule and 16:8 Planner | StepFast",
          description="Plan an intermittent fasting window with a free planner. Enter a first or last meal time and a fasting length to see your eating window.",
-         h1="Intermittent fasting schedule and planner", kind="article", body=schedule_body, nav="intermittent-fasting"),
+         h1="16/8 intermittent fasting schedule (and a simple planner)", kind="article", body=schedule_body, nav="intermittent-fasting"),
     dict(slug="intermittent-fasting/weight-loss", title="Intermittent Fasting for Weight Loss: The Evidence | StepFast",
          description="What Mayo Clinic and Johns Hopkins say about intermittent fasting and weight loss, what to expect, and where walking fits in.",
          h1="Intermittent fasting for weight loss: what the evidence says", kind="article", body=fasting_weight_body, nav="intermittent-fasting"),

@@ -16,6 +16,7 @@ NAV = [
     ("how-it-works", "/how-it-works/", "How it works"),
     ("intermittent-fasting", "/intermittent-fasting/", "Fasting"),
     ("walking-for-weight-loss", "/walking-for-weight-loss/", "Walking"),
+    ("glossary", "/glossary/", "Glossary"),
     ("safety", "/safety/", "Safety"),
 ]
 
@@ -101,6 +102,7 @@ def footer():
     return (f'<footer class="site-footer"><div class="wrap"><nav aria-label="Footer">'
             f'<a href="/how-it-works/">How it works</a><a href="/intermittent-fasting/">Intermittent fasting</a>'
             f'<a href="/weight-tracking/">Weight tracking</a>'
+            f'<a href="/glossary/">Glossary</a>'
             f'<a href="/walking-for-weight-loss/">Walking</a><a href="/tools/step-goal/">Step goal planner</a>'
             f'<a href="/walking-10000-steps-weight-loss/">10,000 steps and weight loss</a>'
             f'<a href="/how-long-to-walk-for-weight-loss/">How long to walk</a>'

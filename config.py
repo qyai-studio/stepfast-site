@@ -12,7 +12,7 @@ LEGAL_PRIVACY = "https://legal.qyaitech.com/privacy/"
 LEGAL_TERMS = "https://legal.qyaitech.com/terms/"
 CONTACT_EMAIL = ""                          # VERIFY: real support address; footer shows it only when set
 PUBLISHED = "2026-10-26"                    # Original publication date for existing articles
-UPDATED = "2026-10-30"                      # ISO date used for lastmod / dateModified
+UPDATED = "2026-11-02"                      # ISO date used for lastmod / dateModified
 REVIEWER = None                             # e.g. "Reviewed by Jane Doe, RD" ONLY when a real reviewer signed off
 
 # --- StepFast rules quoted on the site. VERIFY against the current app build. ---
