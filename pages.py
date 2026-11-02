@@ -385,8 +385,9 @@ fast, and doesn't need an account you don't want. Use the checklist below on any
 <h2>Where StepFast fits</h2>
 <p>StepFast is a walking-first weight tracker for iPhone, with a fasting timer as an option. It suits you if you want
 steps, weight and an optional fasting window in one simple app, with no account. It is not a calorie or food logger, it
-is iPhone only, and the interface is in English. The App Store listing shows which features are free and which are in the
-optional paid tier.</p>
+is iPhone only, and the interface is in English. Apple Health is optional and read-only. A safety check comes before fasting,
+and the app caps planned fasting at {C.FAST_CAP_HOURS} hours per day. The App Store listing shows which features are free
+and which are in the optional paid tier. Read the <a href="/glossary/fasting-timer/">fasting timer guide</a>.</p>
 
 <h2>Other apps you may come across</h2>
 <p>Well-known fasting apps include Zero, Simple, Fastic, BodyFast and Life Fasting Tracker. Prices and features change,
@@ -626,7 +627,7 @@ PAGES = [
     dict(slug="weight-tracking", title="Weight Tracker App for iPhone: See Weight Trends | StepFast",
          description="Track weight over time with StepFast. Learn how to choose a weigh-in routine, understand daily changes, and use a trend without chasing one number.",
          h1="Track your weight over time, not one weigh-in at a time", kind="article", body=weight_tracking_body,
-         nav=None, published="2026-10-30", modified="2026-10-30"),
+         nav=None, published="2026-10-30", modified="2026-11-02"),
     dict(slug="glossary", title="StepFast Glossary: Walking, Weight Tracking & Fasting Terms",
          description="Plain-language definitions for walking, weight tracking, intermittent fasting, eating windows, and StepFast tools.",
          h1="StepFast glossary", kind="article", body=glossary_body, nav="glossary"),
@@ -666,11 +667,11 @@ PAGES = [
     dict(slug="walking-10000-steps-weight-loss", title="10,000 Steps a Day for Weight Loss: What to Expect | StepFast",
          description="Can 10,000 steps a day help with weight loss? Learn what the number can and can't tell you, how to build from your baseline, and why it cannot predict a result.",
          h1="Will 10,000 steps a day help you lose weight?", kind="article", body=ten_thousand_steps_body,
-         nav="walking-for-weight-loss", published="2026-10-30", modified="2026-10-30"),
+         nav="walking-for-weight-loss", published="2026-10-30", modified="2026-11-02"),
     dict(slug="how-long-to-walk-for-weight-loss", title="How Long Should You Walk for Weight Loss? | StepFast",
          description="How long should you walk each day? See the CDC's general weekly activity guidance, ways to split up walks, and why minutes cannot promise weight loss.",
          h1="How long should you walk each day for weight loss?", kind="article", body=walking_duration_body,
-         nav="walking-for-weight-loss", published="2026-10-30", modified="2026-10-30"),
+         nav="walking-for-weight-loss", published="2026-10-30", modified="2026-11-02"),
     dict(slug="tools/step-goal", title="Step Goal Planner: Build a Weekly Walking Ramp | StepFast",
          description="Free step goal planner. Enter your current steps and a target, and get a week-by-week plan that adds a little at a time.",
          h1="Step goal planner", kind="article", body=step_goal_body, nav="walking-for-weight-loss"),
