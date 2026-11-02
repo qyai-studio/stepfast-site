@@ -56,7 +56,6 @@ def home_body():
 <figure class="story-image">
   <img src="/static/walking-habit-journey.jpg" width="1500" height="1000" loading="eager" fetchpriority="high"
        alt="Illustrative scene: an adult ties walking shoes at home, then continues a walk outdoors">
-  <figcaption>An illustrative look at building a repeatable walking habit. It does not represent a typical weight-loss result.</figcaption>
 </figure>
 
 <h2>Your steps are the starting point</h2>
