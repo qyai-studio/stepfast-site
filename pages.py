@@ -53,6 +53,12 @@ def home_body():
   </ul>
 </section>
 
+<figure class="story-image">
+  <img src="/static/walking-habit-journey.jpg" width="1500" height="1000" loading="eager" fetchpriority="high"
+       alt="Illustrative scene: an adult ties walking shoes at home, then continues a walk outdoors">
+  <figcaption>An illustrative look at building a repeatable walking habit. It does not represent a typical weight-loss result.</figcaption>
+</figure>
+
 <h2>Your steps are the starting point</h2>
 <p>StepFast reads your steps from Apple Health if you allow it, or you can enter them yourself. It compares today's
 count with your daily goal and shows where you are. In the app the starting estimate is {C.DEFAULT_GOAL:,} steps, and
