@@ -123,5 +123,18 @@
     var fn = tools[el.getAttribute("data-tool")];
     if (fn) fn(el);
   });
+
+  /* Track App Store outbound clicks separately from Google Search clicks. */
+  document.addEventListener("click", function (event) {
+    var link = event.target.closest('a[href*="apps.apple.com/"]');
+    if (!link || typeof window.gtag !== "function") return;
+    var destination;
+    try { destination = new URL(link.href); } catch (_) { return; }
+    window.gtag("event", "app_store_click", {
+      link_url: destination.href,
+      app_store_ct: destination.searchParams.get("ct") || "",
+      page_path: window.location.pathname
+    });
+  });
 })();
 
